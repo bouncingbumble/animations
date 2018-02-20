@@ -36,3 +36,30 @@ h1 {
     box-shadow: none;
     top: 6px;
 }
+
+.move-right {
+    transform: translateX(1000px);
+}
+
+.move-left {
+    /*transform: translateY(150px);*/
+    transform: scale(5, 3)
+               rotate(45deg);
+    transform-origin: left top;
+}
+
+.move-left:hover {
+    transform: rotate(90deg)
+    scale(5, 3);
+}
+
+.move-left:active {
+    transform: rotate(180deg)
+    scale(5, 3);
+}
+
+
+.move-right:hover {
+    transform: translate(20px, 200px);
+}
+
